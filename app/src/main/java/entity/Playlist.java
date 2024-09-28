@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 import org.jetbrains.annotations.NotNull;
 
-@Entity
+@Entity(tableName = "PlayList")
 public class Playlist {
     @NotNull
     @PrimaryKey
