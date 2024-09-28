@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- Tiêu đề dialog -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/dialogtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chi tiết bài hát"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Nút thoát -->
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:contentDescription="Close button"
+            app:tint="@color/music" />
+    </LinearLayout>
+
+    <!-- Tên bài hát -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tên bài hát:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtsongname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="48sp"
+        android:hint="Tên bài hát"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:color/transparent" />
+
+    <!-- Tên nghệ sỹ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Tên nghệ sỹ:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtartistname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="48sp"
+        android:hint="Tên nghệ sỹ"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:color/transparent" />
+
+    <!-- Năm phát hành -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Năm phát hành:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/edtreleaseyear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="48sp"
+        android:hint="Năm phát hành"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:color/transparent" />
+
+    <!-- Thời lượng -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Thời gian nghe:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/edtduration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="48sp"
+        android:hint="Thời lượng"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:color/transparent" />
+
+    <!-- Số lượt nghe -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Số lượt nghe:"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/edtplaycount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="48sp"
+        android:hint="Số lượt nghe"
+        android:enabled="false"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@android:color/transparent" />
+
+    <!-- Nút Chỉnh sửa -->
+    <Button
+        android:id="@+id/btnedit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Chỉnh sửa"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp" />
+
+    <!-- Nút Lưu (ẩn ban đầu) -->
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Lưu"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
