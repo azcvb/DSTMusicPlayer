@@ -26,18 +26,6 @@
 
 
     <ImageButton
-        android:id="@+id/btnChangeSpeed"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:contentDescription="Change Playback Speed"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pause"
-        app:layout_constraintBottom_toTopOf="@+id/btnLove"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
-
-    <ImageButton
         android:id="@+id/btnPause"
         android:layout_width="78dp"
         android:layout_height="78dp"

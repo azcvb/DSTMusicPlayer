@@ -84,7 +84,7 @@ public class PhatNhacActivity extends AppCompatActivity {
         // Khởi tạo các thành phần giao diện
         btnTimer = findViewById(R.id.btnTimer);
         btnTimer.setOnClickListener(v -> showTimerDialog());
-        ImageButton btnChangeSpeed = findViewById(R.id.btnChangeSpeed);
+        ImageButton btnChangeSpeed = findViewById(R.id.btnMore);
         btnChangeSpeed.setOnClickListener(v -> showPlaybackSpeedDialog());
         btnPlayPause = findViewById(R.id.btnPause);
         seekBarMusic = findViewById(R.id.seekBarMusic);
